@@ -1,0 +1,7 @@
+[package]
+name = "c-base64"
+version = "0.1.0"
+authors = ["b1tg <b1tg@protonmail.ch>"]
+edition = "2018"
+
+[dependencies]
