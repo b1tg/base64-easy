@@ -2,8 +2,12 @@
 base64 tool
 
 # usage
-
-> ./c-base64 e abc77                                                                                                                                                   master ✔
+```
+# encode   
+$ ./c-base64 e abc77                                                                                                    
 YWJjNzc=
-> ./c-base64 d YWJjNzc=                                                                                                                                                master ✔
+
+# decode   
+$ ./c-base64 d YWJjNzc=                                                                                           
 abc77
+```
