@@ -22,7 +22,7 @@ use as binary
 ```
 
 # build
-cargo build -- example simple
+cargo build --example simple
 
 # encode   
 $ ./simple e abc77                                                                                                    
