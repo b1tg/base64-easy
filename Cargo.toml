@@ -3,5 +3,8 @@ name = "base64-easy"
 version = "0.1.0"
 authors = ["b1tg <b1tg@protonmail.ch>"]
 edition = "2018"
+description = "base64, encode and decode"
+keywords = ["base64", "encoding"]
+license = "MIT/Apache-2.0"
 
 [dependencies]
