@@ -20,6 +20,6 @@ fn main() {
     if option == "e" {
         println!("{}", encode(payload));
     } else if option == "d" {
-        println!("{}", decode(payload));
+        println!("{}", decode(payload).unwrap());
     }
 }

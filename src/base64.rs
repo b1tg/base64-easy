@@ -1,6 +1,6 @@
 use std::{char, str};
 
-pub fn decode(s: String) -> String {
+pub fn decode(s: String) -> Result<String, String> {
     let s = s.trim_end_matches('=');
     let mut result = String::from("");
     for c in s.chars() {
@@ -19,7 +19,7 @@ pub fn decode(s: String) -> String {
         vec.push(intval);
         n += 1;
     }
-    str::from_utf8(&vec).unwrap().to_owned()
+    Ok(str::from_utf8(&vec).map_err(|e| e.to_string())?.to_owned())
 }
 
 pub fn encode(s: String) -> String {
@@ -99,8 +99,8 @@ mod test {
 
     #[test]
     fn test_decode() {
-        let input = String::from("TWE");
+        let input = String::from("TWE=");
         let output = decode(input);
-        assert_eq!("Ma".to_string(), output);
+        assert_eq!("Ma".to_string(), output.unwrap());
     }
 }
