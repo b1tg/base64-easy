@@ -1,9 +1,9 @@
 # base64-easy
-BASE64 implement in Rust.
+base64 implement in Rust.
 
-# usage
+# Usage
 
-## as lib
+## As lib
 
 ```rust
 extern crate base64_easy;
@@ -16,7 +16,7 @@ let b = decode("YWJj".to_string());
 ```
 
 
-## as binary
+## As binary
 ```
 
 # build
