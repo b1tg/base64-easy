@@ -1,10 +1,11 @@
 [package]
 name = "base64-easy"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["b1tg <b1tg@protonmail.ch>"]
 edition = "2018"
-description = "base64, encode and decode"
+description = "encode and decode use base64"
 keywords = ["base64", "encoding"]
 license = "MIT/Apache-2.0"
+repository = "https://github.com/b1tg/base64-easy"
 
 [dependencies]
